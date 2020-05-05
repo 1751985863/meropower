@@ -10,7 +10,7 @@ class joinThread1 extends Thread{
     }
 }
 public class joinThread {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         joinThread1 thread1=new joinThread1();
         joinThread1 thread11=new joinThread1();
         thread1.start();
@@ -20,6 +20,11 @@ public class joinThread {
             e.printStackTrace();
         }
         thread11.start();
+        try {
+            thread11.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         for (int i = 0; i < 30; i++) {
             System.out.println("main-------------");
         }
