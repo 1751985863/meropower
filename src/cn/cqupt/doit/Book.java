@@ -51,6 +51,7 @@ public class Book implements Comparable {
             list.add(book);
 
         }
+        /**/
         System.out.println("input a new Book:");
         temp=input.nextLine();
         message = temp.split(",");
