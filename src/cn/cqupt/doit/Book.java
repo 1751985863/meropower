@@ -60,6 +60,7 @@ public class Book implements Comparable {
         /**/
         /**/
         /**/
+        /**/
         System.out.println("input a new Book:");
         temp=input.nextLine();
         message = temp.split(",");
